@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Szülőknek – 44. sz. Zrínyi Miklós Cserkészcsapat</title>
+<meta name="description" content="Készülési segédletek a 44. sz. Zrínyi Miklós Cserkészcsapat vezetőinek.">
+<style>
+  :root{--green:#1e5b3a;--green-dark:#143d27;--cream:#faf7f0;--ink:#22301f;--muted:#5a6b57;--line:#ddd5c3;--card:#ffffff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  a{color:var(--green)}
+  header{background:var(--green-dark);color:#fff;padding:2rem 1rem 1.5rem;text-align:center}
+  header img{width:150px;height:150px;object-fit:contain;background:#fff;border-radius:50%;padding:8px}
+  header h1{margin:.8rem 0 .2rem;font-size:1.9rem;line-height:1.2}
+  header p{margin:0;color:#cfe3d3;font-size:1.05rem}
+  nav{background:var(--green);padding:.6rem 1rem;text-align:center;position:sticky;top:0}
+  nav a{color:#fff;text-decoration:none;margin:0 .7rem;font-weight:600;white-space:nowrap}
+  nav a:hover{text-decoration:underline}
+  nav a.active{text-decoration:underline;text-underline-offset:4px}
+  main{max-width:820px;margin:0 auto;padding:1.5rem 1rem 2.5rem}
+  section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:1rem 0}
+  h2{color:var(--green-dark);margin:.2rem 0 .6rem;font-size:1.35rem}
+  .times{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.8rem}
+  .timebox{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:1rem;text-align:center}
+  .timebox strong{display:block;color:var(--green-dark);font-size:1.05rem}
+  .email{font-size:1.1rem;font-weight:700;word-break:break-all}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.8rem}
+  .cardlink{display:block;background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:1rem;text-decoration:none;color:var(--ink)}
+  .cardlink strong{display:block;color:var(--green-dark);font-size:1.05rem;margin-bottom:.3rem}
+  footer{text-align:center;color:var(--muted);padding:1.5rem 1rem 2rem;font-size:.95rem}
+  .uniform-photos{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:.8rem 0}
+  .uniform-photos figure{margin:0}
+  .uniform-photos img{width:100%;border-radius:8px;border:1px solid var(--line)}
+  .uniform-photos figcaption{font-size:.9rem;color:var(--muted);text-align:center;margin-top:.3rem}
+  .uniform-wide{margin:.8rem 0}
+  .uniform-wide img{width:100%;border-radius:8px;border:1px solid var(--line)}
+  .uniform-wide figcaption{font-size:.9rem;color:var(--muted);text-align:center;margin-top:.3rem}
+  @media (max-width:560px){header h1{font-size:1.5rem}.times,.cards{grid-template-columns:1fr}nav a{margin:0 .4rem;font-size:.95rem}}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.webp" alt="A 44. sz. Zrínyi Miklós Cserkészcsapat címere">
+  <h1>44. sz. Zrínyi Miklós Cserkészcsapat</h1>
+  <p>Oregon</p>
+</header>
+<nav>
+  <a href="index.html">Főoldal</a>
+  <a href="foglalkozasok.html">Naptár</a>
+  <a href="taboraink.html">Táborok/Események</a>
+  <a href="vezetoknek.html">Vezetőinknek</a>
+  <a href="cserkeszeknek.html">Cserkészeknek</a>
+  <a href="szuloknek.html">Szülőknek</a>
+  <a href="kapcsolat.html">Kapcsolat</a>
+  <a href="adomany.html">Adomány</a>
+</nav>
+<main>
+  <section>
+    <h2>Bejgli sütés – feliratkozás</h2>
+    <p>December 5-én bejgli sütés lesz több helyszínen. Válasszatok helyszínt, és írjátok be a neveteket az űrlapon (helyszínenként 2–3 nagycserkész és 2–3 kiscserkész):</p>
+    <style>
+    #bejgli-table table{width:100%;table-layout:fixed;border-collapse:collapse}
+    #bejgli-table th,#bejgli-table td{border:1px solid var(--line);padding:.35rem .45rem;word-wrap:break-word}
+    #bejgli-table th:nth-child(1){width:18%}
+    #bejgli-table th:nth-child(2){width:22%}
+    #bejgli-table th:nth-child(3){width:20%}
+    #bejgli-table th:nth-child(4){width:20%}
+    #bejgli-table th:nth-child(5){width:20%}
+    </style>
+    <div id="bejgli-table"><p>Táblázat betöltése…</p></div>
+    <h3 style="margin-top:1.2rem">Cserkész feliratkozás</h3>
+    <form id="bejgli-form" style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:end;margin-top:.8rem">
+      <label>Név<br><input type="text" id="bf-nev" required style="padding:.4rem;border:1px solid var(--line);border-radius:6px"></label>
+      <label>Helyszín<br><select id="bf-helyszin" required style="padding:.4rem;border:1px solid var(--line);border-radius:6px"></select></label>
+      <label><input type="radio" name="bf-tipus" value="nagy" checked> Nagycserkész</label>
+      <label><input type="radio" name="bf-tipus" value="kis"> Kiscserkész</label>
+      <button type="submit" style="background:var(--green-dark);color:#fff;border:0;border-radius:6px;padding:.45rem 1rem;cursor:pointer">Feliratkozom</button>
+    </form>
+    <p id="bf-msg" style="margin-top:.4rem"></p>
+    <h3 style="margin-top:1.2rem">Helyszínként jelentkezem</h3>
+    <p>Ha nálatok is lehet bejglit sütni, jelentkezzetek helyszínként:</p>
+    <form id="bejgli-host-form" style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:end;margin-top:.5rem">
+      <label>Név<br><input type="text" id="bh-nev" required style="padding:.4rem;border:1px solid var(--line);border-radius:6px"></label>
+      <label>Cím<br><input type="text" id="bh-cim" required style="padding:.4rem;border:1px solid var(--line);border-radius:6px"></label>
+      <label>Alkalmas időpont (nem kötelező)<br><input type="text" id="bh-ido" style="padding:.4rem;border:1px solid var(--line);border-radius:6px"></label>
+      <button type="submit" style="background:var(--green-dark);color:#fff;border:0;border-radius:6px;padding:.45rem 1rem;cursor:pointer">Jelentkezem</button>
+    </form>
+    <p id="bh-msg" style="margin-top:.4rem"></p>
+    <script>
+    var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx9gmem8r09y8_ZVYR1mPWWJ6KGr5HJW0GwrCvq8LX8ANrxVhcPn4X_xmRXg-BsU2nWPA/exec";
+    var SHEET_ID = "1nHcLZLz8ujKmND0p1H6F-S05SvzSZ1LiONzAunVrDNI";
+    function bejgliLoad() {
+      fetch("https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:json")
+        .then(function(r){ return r.text(); })
+        .then(function(t){
+          var j = JSON.parse(t.substring(t.indexOf("{"), t.lastIndexOf("}") + 1));
+          var rows = j.table.rows.map(function(r){ return r.c.map(function(c){ return c && c.v != null ? String(c.v) : ""; }); });
+          var html = '<table class="events"><thead><tr><th>Helyszín</th><th>Cím</th><th>Időpont</th><th>Nagycserkészek</th><th>Kiscserkészek</th></tr></thead><tbody>';
+          var sel = document.getElementById("bf-helyszin");
+          sel.innerHTML = "";
+          rows.forEach(function(r){
+            if (!r[1]) return;
+            var nagy = [r[4], r[5], r[6]].filter(Boolean).join(", ") || "–";
+            var kis = [r[7], r[8], r[9]].filter(Boolean).join(", ") || "–";
+            html += "<tr><td><strong>" + r[1] + "</strong></td><td>" + (r[2] || "") + "</td><td>" + (r[3] || "") + "</td><td>" + nagy + "</td><td>" + kis + "</td></tr>";
+            var o = document.createElement("option"); o.value = r[1]; o.textContent = r[1]; sel.appendChild(o);
+          });
+          html += "</tbody></table>";
+          document.getElementById("bejgli-table").innerHTML = html;
+        })
+        .catch(function(){ document.getElementById("bejgli-table").innerHTML = "<p>A táblázat most nem tölthető be.</p>"; });
+    }
+    bejgliLoad();
+    document.getElementById("bejgli-form").addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var msg = document.getElementById("bf-msg");
+      if (!APPS_SCRIPT_URL) { msg.textContent = "A feliratkozás hamarosan elérhető."; return; }
+      var data = {
+        nev: document.getElementById("bf-nev").value.trim(),
+        helyszin: document.getElementById("bf-helyszin").value,
+        tipus: document.querySelector('input[name="bf-tipus"]:checked').value
+      };
+      msg.textContent = "Küldés…";
+      fetch(APPS_SCRIPT_URL, { method: "POST", body: JSON.stringify(data) })
+        .then(function(r){ return r.json(); })
+        .then(function(res){
+          if (res.ok) { msg.textContent = "Köszönjük, feliratkoztál!"; document.getElementById("bf-nev").value = ""; bejgliLoad(); }
+          else { msg.textContent = res.error || "Hiba történt."; }
+        })
+        .catch(function(){ msg.textContent = "Hiba történt, próbáld újra."; });
+    });
+    document.getElementById("bejgli-host-form").addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var msg = document.getElementById("bh-msg");
+      if (!APPS_SCRIPT_URL) { msg.textContent = "A jelentkezés hamarosan elérhető."; return; }
+      var data = {
+        action: "host",
+        nev: document.getElementById("bh-nev").value.trim(),
+        cim: document.getElementById("bh-cim").value.trim(),
+        ido: document.getElementById("bh-ido").value.trim()
+      };
+      msg.textContent = "Küldés…";
+      fetch(APPS_SCRIPT_URL, { method: "POST", body: JSON.stringify(data) })
+        .then(function(r){ return r.json(); })
+        .then(function(res){
+          if (res.ok) { msg.textContent = "Köszönjük a jelentkezést!"; document.getElementById("bh-nev").value = ""; document.getElementById("bh-cim").value = ""; document.getElementById("bh-ido").value = ""; bejgliLoad(); }
+          else { msg.textContent = res.error || "Hiba történt."; }
+        })
+        .catch(function(){ msg.textContent = "Hiba történt, próbáld újra."; });
+    });
+    </script>
+  </section>
+  <section>
+    <h2>Betlehemes előadás</h2>
+    <p>December 12-én a Mikulás bulin Betlehemes előadás lesz (és bejgli árulás is). Idén is a tavalyi, Hanga által írt betlehemest adjuk elő; a szerepeket a cserkészek maguk osztották újra, a szereposztás a szöveg első oldalán található.</p>
+    <p>Gyakorolni főleg a csütörtöki foglalkozásokon fogunk, december 12-én pedig az előadás előtt összepróbáljuk a kicsikkel is. A kiscserkészek házi feladata megtanulni a három népéneket: <em>Dicsőség mennyben az Istennek</em>, <em>Pásztorok, keljünk fel</em> és <em>Pásztorok, pásztorok</em> (a YouTube segít). Akinek nincs szerepe, pásztor vagy angyal lesz – kérjük, gondoskodjatok jelmezről.</p>
+    <p><a href="betlehemes-2026.pdf" target="_blank" rel="noopener">A Betlehemes szövege (PDF) →</a></p>
+  </section>
+  <section>
+    <h2>Karácsonyi koncert</h2>
+    <p>December 26-án 19:30-kor karácsonyi koncert lesz a Schnitzer Hallban (Portland Youth Philharmonic, 65. karácsonyi koncert) — Gia is játszik. Jegyek: $25 felnőtt / $15 gyerek. Eddig a zsöllye (Orchestra) V-sorának közepére vettünk jegyeket.</p>
+    <p><a href="https://portlandyouthphil.org/events/events/65th-annual-concert-at-christmas/1308" target="_blank" rel="noopener">Jegyvásárlás →</a></p>
+  </section>
+  <section>
+    <h2>Egyenruha</h2>
+    <p>A cserkészek az eseményeken egységesen, egyféle ruházatban jelennek meg: vagy <strong>díszegyenruhában</strong>, vagy <strong>gyakorlati egyenruhában</strong>. Díszegyenruha kell a tábori zászlószertartásokra, misére és istentiszteletre, nemzeti ünnepekre és hivatalos eseményekre, valamint az avatásokra. Minden más alkalomra a gyakorlati egyenruha való. Politikai pártok és szervezetek rendezvényén nem viselünk egyenruhát.</p>
+    <h3>Kiscserkészeknek – mit kell beszerezni?</h3>
+    <p>Kiscserkészeknél az irányadó a csapatparancsnok levele (2026. október 29.). Egyelőre elég egy <strong>drapp/khaki/tan színű ing</strong> – akármilyen szabású, jó, ha van zsebe; női szabás is jó, kislányoknak az ingruha is jó. A többi darabot elég az évek folyamán megszerezni. A cserkész egyenruha részei: cserkésznyakkendő, cserkészing, drapp vagy zöld rövidnadrág (fiúk) / barna szoknya (lányok), zöld zokni (fiúk) / barna zokni vagy harisnya (lányok), cserkészöv.</p>
+    <p><strong>Amit a csapat ad, azt nem kell megvenni: a nyakkendőt és az ingre való jelvényeket.</strong> Kék pöttyös nyakkendőt adunk, akinek még nincs – az a tiétek, vigyétek haza, abban gyertek.</p>
+    <p>Ingvásárláshoz néhány Amazon-link segítségül:</p>
+    <ul>
+      <li><a href="https://www.amazon.com/Grandwish-Short-Sleeve-Button-Down-Shirt/dp/B08SVXC357/" target="_blank" rel="noopener">Grandwish rövid ujjú ing (Amazon) →</a></li>
+      <li><a href="https://www.amazon.com/French-Toast-Girls-Safari-Shirtdress/dp/B092FW8YTV/" target="_blank" rel="noopener">French Toast lányka szafari ingruha (Amazon) →</a></li>
+      <li><a href="https://www.amazon.com/Noomelfish-Button-Western-Cowgirl-Sleeve/dp/B0DHWNGST4/" target="_blank" rel="noopener">Noomelfish western stílusú ing (Amazon) →</a></li>
+      <li><a href="https://www.amazon.com/Spring-Gege-Sleeve-Western-Pockets/dp/B0C5QJ6PNR/" target="_blank" rel="noopener">Spring Gege zsebes ing (Amazon) →</a></li>
+    </ul>
+    <h3>Nagycserkészeknek – a hivatalos irányelv</h3>
+    <p>Nagycserkészeknél a KMCSSZ Egyenruha Irányelve (2024. február) az irányadó: <a href="https://kmcssz.org/wp-content/uploads/2024/11/KMCSSZ-Egyenruha-Iranyelv-2024-februar.pdf" target="_blank" rel="noopener">KMCSSZ Egyenruha Irányelv 2024 (PDF) →</a></p>
+    <p><strong>Díszegyenruha:</strong> khaki cserkészing (Hungária és MCSSZF jelvénnyel, csapatszámmal, képesítési és megbízatási jelzésekkel), az inget a nadrágba, illetve a szoknyába betűrve hordjuk; korosztálynak megfelelő nyakkendő nyakkendőgyűrűvel; fiúknak khaki rövid- vagy hosszúnadrág cserkészövvel; lányoknak sötétbarna szoknya vagy szoknyanadrág cserkészövvel; fiúknak sötétzöld, lányoknak sötétbarna térdharisnya vagy zokni; barna vagy sötét, nem feltűnő cipő vagy bakancs. Ha a khaki nadrág, a barna szoknya vagy a zokni nem beszerezhető, a csapaton belül egységesen sötétzöld nadrág, szoknya és zokni is hordható. Kiegészítésként a csapatparancsnok döntése alapján Bocskai-sapka: fiúknak sötétzöld, lányoknak sötétbarna.</p>
+    <div class="uniform-photos">
+      <figure><img src="photos/egyenruha-fiu.jpg" alt="Díszegyenruha fiúknak" loading="lazy"><figcaption>Díszegyenruha fiúknak</figcaption></figure>
+      <figure><img src="photos/egyenruha-lany.jpg" alt="Díszegyenruha lányoknak" loading="lazy"><figcaption>Díszegyenruha lányoknak</figcaption></figure>
+    </div>
+    <p><strong>Gyakorlati egyenruha:</strong> nyakkendő nyakkendőgyűrűvel, tábori vagy csapatpóló; a többi ruhadarabot (sapka, nadrág, cipő, kabát stb.) a csapat- vagy táborparancsnok szabja meg az időjárás és a gyakorlati szempontok alapján.</p>
+    <div class="uniform-photos">
+      <figure><img src="photos/egyenruha-gyakorlati.jpg" alt="Gyakorlati egyenruha" loading="lazy"><figcaption>Gyakorlati egyenruha: nyakkendő és csapatpóló</figcaption></figure>
+      <figure><img src="photos/egyenruha-ing.jpg" alt="Cserkészing felvarrókkal, kék nyakkendővel" loading="lazy"><figcaption>Cserkészing kék (kiscserkész) nyakkendővel</figcaption></figure>
+    </div>
+    <p>Díszegyenruhát csak az viselhet, aki ígéretet vagy fogadalmat tett. Az újonc jelöltek nyakkendő nélkül, ingben jönnek; az óvodás- és kiscserkész-jelöltek kék, fehér pöttyös nyakkendőt viselhetnek.</p>
+    <h3>A nyakkendő színe</h3>
+    <ul>
+      <li><strong>Kiscserkészek:</strong> kék nyakkendő (jelölteknek: kék, fehér pöttyös)</li>
+      <li><strong>Cserkészek:</strong> zöld nyakkendő</li>
+      <li><strong>Vándorcserkészek:</strong> szürke nyakkendő</li>
+      <li><strong>Felnőtt cserkészek:</strong> barna nyakkendő</li>
+    </ul>
+    <p>A vezetők az általuk vezetett őrsnek vagy rajnak megfelelő színű nyakkendőt hordják. Vezetőképző táborokban a kiképző törzs tagjai sárga, az egészségügyi törzs tagjai fehér nyakkendőt viselnek.</p>
+    <h3>Hova kerülnek a felvarrók?</h3>
+    <ul>
+      <li><strong>Hungária jelvény</strong> – a jobb zseb fölött</li>
+      <li><strong>MCSSZF (Fórum) jelvény</strong> – a bal zseben</li>
+      <li><strong>Évvirágok és vezetői képesítések</strong> (fém hársfalevelek) – a bal zseb fölött, szárral lefelé</li>
+      <li><strong>Csapatszám (44)</strong> – a jobb felső karon</li>
+      <li><strong>Segédtiszt / cserkésztiszt / csapattiszti jelvény</strong> – a bal felső karon (arany keret: csapatparancsnok; piros alátét: központi beosztás; zöld alátét: kerületi vagy körzeti beosztás)</li>
+      <li><strong>Őrsvezetői sávok</strong> – a bal zseben, a Fórumjelvény alatt: rajvezető 3, őrsvezető 2, segédőrsvezető 1 függőleges sáv</li>
+      <li><strong>Kiscserkész- és cserkészpróba-jelvények, olvasási különpróbák</strong> – a bal felső karon (a cserkészpróbák a bal vállpánton is lehetnek)</li>
+      <li><strong>Emlékjelvények</strong> (pl. jubileumi tábor, regős tábor) – egy évig az eseménytől számítva, a jobb zseben</li>
+    </ul>
+    <div class="uniform-wide">
+      <figure><img src="photos/egyenruha-abra.jpg" alt="A felvarrók elhelyezése a cserkésingen" loading="lazy"><figcaption>A felvarrók elhelyezése a cserkésingen (KMCSSZ)</figcaption></figure>
+    </div>
+    <div class="uniform-wide">
+      <figure><img src="photos/egyenruha-jelvenyek.jpg" alt="Jelvények és elhelyezésük" loading="lazy"><figcaption>Jelvények és elhelyezésük (KMCSSZ)</figcaption></figure>
+    </div>
+    <h3>Hol lehet beszerezni a többit?</h3>
+    <p>A nyakkendőt és a jelvényeket a csapat adja. A többit a <a href="https://cserkeszbolt.org/" target="_blank" rel="noopener">KMCSSZ Cserkészboltban (cserkeszbolt.org) →</a> lehet megrendelni: nyakkendőgyűrű ($4,50), cserkészsapka ($16), nyakkendők ($8); az öv és a zokni egyelőre „hamarosan elérhető” a boltban. Elérhetőség: <a href="mailto:cserkeszbolt@kmcssz.org">cserkeszbolt@kmcssz.org</a>, 908-295-4170. Inget az Amazonról (lásd fent) vagy máshonnan is lehet venni – használt ingek néha a csapatnál is akadnak, érdemes rákérdezni.</p>
+    <p>Források: <a href="https://kmcssz.org/wp-content/uploads/2024/11/KMCSSZ-Egyenruha-Iranyelv-2024-februar.pdf" target="_blank" rel="noopener">KMCSSZ Egyenruha Irányelv 2024 (PDF)</a> · <a href="https://kmcssz.org/" target="_blank" rel="noopener">KMCSSZ honlap</a> · <a href="https://cserkeszbolt.org/" target="_blank" rel="noopener">KMCSSZ Cserkészbolt</a>. A képek a KMCSSZ Egyenruha Irányelvének példaképei.</p>
+  </section>
+</main>
+<footer>
+  44. sz. Zrínyi Miklós Cserkészcsapat – Oregon (KMCSSZ)
+</footer>
+</body>
+</html>
