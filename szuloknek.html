@@ -36,6 +36,7 @@
   .uniform-wide{margin:.8rem 0}
   .uniform-wide img{width:100%;border-radius:8px;border:1px solid var(--line)}
   .uniform-wide figcaption{font-size:.9rem;color:var(--muted);text-align:center;margin-top:.3rem}
+  .more-link{background:none;border:none;padding:0;font:inherit;color:var(--green);text-decoration:underline;cursor:pointer}
   @media (max-width:560px){header h1{font-size:1.5rem}.times,.cards{grid-template-columns:1fr}nav a{margin:0 .4rem;font-size:.95rem}}
 </style>
 </head>
@@ -178,6 +179,8 @@
     <h3>Nagycserkészeknek – a hivatalos irányelv</h3>
     <p>Nagycserkészeknél a KMCSSZ Egyenruha Irányelve (2024. február) az irányadó: <a href="https://kmcssz.org/wp-content/uploads/2024/11/KMCSSZ-Egyenruha-Iranyelv-2024-februar.pdf" target="_blank" rel="noopener">KMCSSZ Egyenruha Irányelv 2024 (PDF) →</a></p>
     <p><strong>Díszegyenruha:</strong> khaki cserkészing (Hungária és MCSSZF jelvénnyel, csapatszámmal, képesítési és megbízatási jelzésekkel), az inget a nadrágba, illetve a szoknyába betűrve hordjuk; korosztálynak megfelelő nyakkendő nyakkendőgyűrűvel; fiúknak khaki rövid- vagy hosszúnadrág cserkészövvel; lányoknak sötétbarna szoknya vagy szoknyanadrág cserkészövvel; fiúknak sötétzöld, lányoknak sötétbarna térdharisnya vagy zokni; barna vagy sötét, nem feltűnő cipő vagy bakancs. Ha a khaki nadrág, a barna szoknya vagy a zokni nem beszerezhető, a csapaton belül egységesen sötétzöld nadrág, szoknya és zokni is hordható. Kiegészítésként a csapatparancsnok döntése alapján Bocskai-sapka: fiúknak sötétzöld, lányoknak sötétbarna.</p>
+    <p><button type="button" class="more-link" id="uniform-toggle" aria-expanded="false" aria-controls="uniform-more">Tovább →</button></p>
+    <div id="uniform-more" hidden>
     <div class="uniform-photos">
       <figure><img src="photos/egyenruha-fiu.jpg" alt="Díszegyenruha fiúknak" loading="lazy"><figcaption>Díszegyenruha fiúknak</figcaption></figure>
       <figure><img src="photos/egyenruha-lany.jpg" alt="Díszegyenruha lányoknak" loading="lazy"><figcaption>Díszegyenruha lányoknak</figcaption></figure>
@@ -216,10 +219,20 @@
     <h3>Hol lehet beszerezni a többit?</h3>
     <p>A nyakkendőt és a jelvényeket a csapat adja. A többit a <a href="https://cserkeszbolt.org/" target="_blank" rel="noopener">KMCSSZ Cserkészboltban (cserkeszbolt.org) →</a> lehet megrendelni: nyakkendőgyűrű ($4,50), cserkészsapka ($16), nyakkendők ($8); az öv és a zokni egyelőre „hamarosan elérhető” a boltban. Elérhetőség: <a href="mailto:cserkeszbolt@kmcssz.org">cserkeszbolt@kmcssz.org</a>, 908-295-4170. Inget az Amazonról (lásd fent) vagy máshonnan is lehet venni – használt ingek néha a csapatnál is akadnak, érdemes rákérdezni.</p>
     <p>Források: <a href="https://kmcssz.org/wp-content/uploads/2024/11/KMCSSZ-Egyenruha-Iranyelv-2024-februar.pdf" target="_blank" rel="noopener">KMCSSZ Egyenruha Irányelv 2024 (PDF)</a> · <a href="https://kmcssz.org/" target="_blank" rel="noopener">KMCSSZ honlap</a> · <a href="https://cserkeszbolt.org/" target="_blank" rel="noopener">KMCSSZ Cserkészbolt</a>. A képek a KMCSSZ Egyenruha Irányelvének példaképei.</p>
+    </div>
   </section>
 </main>
 <footer>
   44. sz. Zrínyi Miklós Cserkészcsapat – Oregon (KMCSSZ)
 </footer>
+<script>
+document.getElementById('uniform-toggle').addEventListener('click', function(){
+  var more = document.getElementById('uniform-more');
+  var open = more.hidden;
+  more.hidden = !open;
+  this.setAttribute('aria-expanded', open ? 'true' : 'false');
+  this.textContent = open ? 'Kevesebb ↑' : 'Tovább →';
+});
+</script>
 </body>
 </html>
